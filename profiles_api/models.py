@@ -22,7 +22,7 @@ class UserProfileManager(BaseUserManager):
 
         return user
 
-    def created_superuser(self, email, name, password):
+    def create_superuser(self, email, name, password):
         """Create and save a new Super User with given details"""
         user = self.create_user(email, name, password)
 
